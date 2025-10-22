@@ -10,10 +10,12 @@ A simple web application that allows users to upload files through a user-friend
 # Technologies Used
 **Frontend:**
 - HTML 
-- CSS 
+- CSS
+  
 **Backend:**
 - Python  
-- Flask  
+- Flask
+ 
 **Cloud:**
 - Amazon Web Services (AWS S3) for file storage  
 
