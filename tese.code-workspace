@@ -6,3 +6,49 @@
 	],
 	"settings": {}
 }
+/*the code*/
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #a18cd1, #fbc2eb);
+            padding: 200px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            background-image: url('digital-world-banner-background-remixed-from-public-domain-by-nasa.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+        }
+        input[type="file"] {
+            margin-bottom: 15px;
+        }
+        .link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Your File</h1>
+    <form enctype="multipart/form-data" method="POST" action="http://localhost:5000/upload">
+        <input type="file" name="file" accept=".pdf,.jpg,.png,.txt" required><br>
+        <button type="submit">Upload</button>
+    </form>
+    <div class="link" id="downloadLink"></div>
+</body>
+</html>
